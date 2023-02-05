@@ -1,0 +1,52 @@
+```mermaid
+browser->> server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+activate server
+server-->>browser: Html document
+deactive server
+
+browser->> server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+activate server
+server-->>browser: CSS file
+deactive server
+
+browser->> server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+activate server
+server-->>browser: Main Javascript file
+deactive server
+
+browser->> server: GET chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js
+activate server
+server-->>browser: javascript file
+deactive server
+
+browser->> server: GET chrome-extension://ibnejdfjmmkpcnlpebklmnkoeoihofec/dist/pageHook.js
+activate server
+server-->>browser: javascript file
+deactive server
+
+browser->> server: GET chrome-extension://bfnaelmomeimhlpmgjnjophhpkkoljpa/content_script/inpage_sol.js
+activate server
+server-->>browser: javscript file
+deactive server
+
+browser->> server: GET chrome-extension://bfnaelmomeimhlpmgjnjophhpkkoljpa/content_script/inpage_sol.js
+activate server
+server-->>browser: javscript file
+deactive server
+
+browser->> server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+activate server
+server-->>browser: [{content: "gl hf", date: "2023-02-05T14:13:27.309Z"},…]
+deactive server
+
+browser->> server: GET https://studies.cs.helsinki.fi/favicon.ico
+activate server
+server-->>browser: text/html
+deactive server
+
+browser->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+activate server
+server-->>browser: {content: "New note", date: "2023-02-05T21:59:04.858Z"}
+deactive server
+
+```

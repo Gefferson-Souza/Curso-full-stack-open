@@ -19,7 +19,6 @@ const App = () => {
   const [selected, setSelected] = useState(0);
 
   const [votes, setVotes] = useState(new Array(anecdotes.length).fill(0));
-  console.log("selected", selected);
 
   const randomNumber = () => {
     const num = Math.floor(Math.random() * anecdotes.length);

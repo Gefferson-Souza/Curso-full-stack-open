@@ -1,0 +1,16 @@
+.notification{
+  font-size: 15px;
+  padding: 7px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  background-color: rgb(161 161 170);
+}
+.sucess{
+  border: 3px solid #064e3b;
+  color: #018030;
+}
+.error{
+  border: 3px solid #4e0606;
+  color: #800101;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "exercises",
+  "version": "0.0.1",
+  "description": "phonebook back end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../phonebook-front && npm run build && cp -r build ../phonebook-back",
+    "deploy": "fly deploy",
+    "deploy:all": "npm run build:ui && npm run deploy",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gefferson-Souza/part-3-exercises.git"
+  },
+  "author": "Gefferson Teodoro de Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gefferson-Souza/part-3-exercises/issues"
+  },
+  "homepage": "https://github.com/Gefferson-Souza/part-3-exercises#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint": "^8.35.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "morgan": "^1.10.0"
+  }
+}
